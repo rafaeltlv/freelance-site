@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import styles from './page.module.css';
+import Image from 'next/image'
+import styles from './page.module.css'
 
-export default function Home() {
+export default function About() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
@@ -13,9 +13,9 @@ export default function Home() {
       </div>
 
       <div className={styles.center}>
-        <h1 className='PageIntro'>Welcome to Our Company</h1>
       </div>
-
+        <h1 className='PageIntro' text->
+        </h1>
       <div className={styles.grid}>
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -26,7 +26,7 @@ export default function Home() {
           <h2>
             About Us <span>-&gt;</span>
           </h2>
-          <p>Find Out More Of What We're About</p>
+          <p>Learn More About Us</p>
         </a>
 
         <a
