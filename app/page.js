@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image';
 import styles from './page.module.css';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -18,8 +19,8 @@ export default function Home() {
       </div>
 
       <div className={styles.grid}>
-        <a
-          href="app/about.js"
+        <Link
+          href="/about.js"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
@@ -27,8 +28,8 @@ export default function Home() {
           <h2>
             About Us <span>-&gt;</span>
           </h2>
-          <p>Find Out More Of What We're About</p>
-        </a>
+          <p>Find Out More Of What We&#39;ve About</p>
+        </Link>
 
         <a
           href="app/services.js"

@@ -50,7 +50,7 @@ export default function About() {
           <h2>
             Testimonies <span>-&gt;</span>
           </h2>
-          <p>See What Are Previous Clients Have Said</p>
+          <p>See What Our Previous Clients Have Said</p>
         </a>
 
         <a
