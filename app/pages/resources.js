@@ -1,7 +1,7 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import styles from '../styles/page.module.css';
+import '../styles/globals.module.css';
 
-export default function About() {
+export default function Resources() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
