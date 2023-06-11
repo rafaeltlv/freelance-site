@@ -17,6 +17,8 @@
     "ws": "^8.13.0"
   },
   "devDependencies": {
+    "@types/node": "^20.3.0",
+    "@types/react": "^18.2.11",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4"
   }
