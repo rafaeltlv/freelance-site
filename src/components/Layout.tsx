@@ -2,8 +2,7 @@ import React, { ReactNode, FC } from 'react';
 import Head from 'next/head';
 import Header from './Header';
 import Footer from './Footer';
-import styles from '../styles/page.module.css';
-import '../styles/globals.module.css';
+import styles from '../styles/globals.module.css'; 
 
 interface LayoutProps {
   children: ReactNode;

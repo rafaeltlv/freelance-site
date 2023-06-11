@@ -1,8 +1,7 @@
 import { FC } from 'react';
 import Link from 'next/link';
 import React from 'react'; // Add this import statement
-import styles from '../styles/globals.module.css'
-
+import styles from '../styles/globals.module.css';
 interface RootLayoutProps {
   children: React.ReactNode;
 }
@@ -16,7 +15,7 @@ const Home: FC = () => {
     <RootLayout>
       <main className={styles.main}>
         <div className={styles.description}>
-          <h2 className='FirmTitle'>AdrielSharaby</h2>
+          <h2 className='title'>AdrielSharaby</h2>
           <div></div>
         </div>
 
