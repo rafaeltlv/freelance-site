@@ -5,7 +5,7 @@ module.exports = {
   async rewrites() {
     return [
       {
-        source: '/app/:path*', // Define the source URL pattern
+        source: '/src/:path*', // Define the source URL pattern
         destination: '/:path*', // Define the destination URL pattern
       },
     ];
