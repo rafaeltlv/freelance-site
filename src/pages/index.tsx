@@ -1,28 +1,22 @@
+'use client'
 import { FC } from 'react';
 import Link from 'next/link';
 import React from 'react'; // Add this import statement
-import styles from '../styles/globals.module.css';
-interface RootLayoutProps {
-  children: React.ReactNode;
-}
-
-const RootLayout: FC<RootLayoutProps> = ({ children }) => {
-  return <div>{children}</div>;
-}
+import styles from '../styles/globals.module.css'
+import Layout from '../components/Layout';
 
 const Home: FC = () => {
   return (
-    <RootLayout>
+    <Layout>
       <main className={styles.main}>
         <div className={styles.description}>
-          <h2 className='title'>AdrielSharaby</h2>
+          <h2 className={styles.companyname}>AdrielSharaby</h2>
           <div></div>
         </div>
 
         <div className={styles.center}>
-          <h1 className='PageIntro'>Welcome to Our Company</h1>
+          <h1 className={styles.intromessage}>Welcome to Our Company</h1>
         </div>
-
         <div className={styles.grid}>
           <Link href="/about" className="active">
             <div className={styles.card}>
@@ -47,7 +41,7 @@ const Home: FC = () => {
               <h2>
                 Testimonies <span>-&gt;</span>
               </h2>
-              <p>See What Our Previous Clients Have Said</p>
+              <p>What Our Previous Clients Say</p>
             </div>
           </Link>
 
@@ -56,12 +50,12 @@ const Home: FC = () => {
               <h2>
                 More Resources <span>-&gt;</span>
               </h2>
-              <p>Resources For Your Successful Business</p>
+              <p>Resources For Your Business</p>
             </div>
           </Link>
         </div>
       </main>
-    </RootLayout>
+    </Layout>
   );
 };
 

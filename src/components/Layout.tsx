@@ -1,3 +1,4 @@
+'use client'
 import React, { ReactNode, FC } from 'react';
 import Head from 'next/head';
 import Header from './Header';
@@ -10,7 +11,7 @@ interface LayoutProps {
 
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
-    <div className={styles.rootLayout}>
+    <div className={styles.root}>
       <Head>
         {/* Add any meta tags, title, or other head elements here */}
       </Head>
