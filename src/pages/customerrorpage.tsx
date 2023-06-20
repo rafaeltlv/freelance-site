@@ -1,15 +1,12 @@
-import { NextApiRequest, NextApiResponse } from 'next';
 import React from 'react';
 
-const CustomErrorPage: React.FC<{ error: Error }> = ({ error }) => {
-  return <div>{error.message}</div>;
-};
-
-const ErrorPage = (_req: NextApiRequest, res: NextApiResponse): void => {
-  const error = new Error('404 Not Found');
-
-  res.status(404).json({ error: error.message }); // Only send the error message in the response
+const CustomErrorPage: React.FC<{ statusCode: number, message: string }> = ({ statusCode, message }) => {
+  return (
+    <div>
+      <h1>Error {statusCode}</h1>
+      <p>{message}</p>
+    </div>
+  );
 };
 
 export default CustomErrorPage;
-export { ErrorPage };
